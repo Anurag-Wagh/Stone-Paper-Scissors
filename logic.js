@@ -35,10 +35,11 @@ const showWinner=(userWin,uC,compChoice)=>{
 const playGame=(uC)=>
 {
     const compChoice=computerChoice();
-    let userWin=true;
+    
 
     if(uC===compChoice){drawGame();} //Draw Condition
     else{
+        let userWin=true;
         if(uC==="rock"){
             userWin = compChoice === "scissors" ? true : false;
         }
